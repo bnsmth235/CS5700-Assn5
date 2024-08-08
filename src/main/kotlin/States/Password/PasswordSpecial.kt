@@ -7,7 +7,7 @@ class PasswordSpecial(detector: PasswordDetector) : PasswordState(detector) {
         get() = false
 
     override fun getInput(string: String) {
-        if (string in "QWERTYUIOPLKJHGFDSAZXCVBNM") {
+        if (string in "ABCDEFGHIJKLMNOPQRSTUVWXYZ") {
             detector.state = PasswordValid(detector)
         }
     }

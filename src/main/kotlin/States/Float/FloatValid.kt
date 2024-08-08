@@ -8,7 +8,6 @@ class FloatValid(detector: FloatDetector) : FloatState(detector) {
 
     override fun getInput(string: String) {
         if (string !in "0123456789") {
-
             detector.state = InvalidState(detector)
         }
     }

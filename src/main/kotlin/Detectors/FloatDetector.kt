@@ -7,7 +7,6 @@ import org.example.States.Float.FloatStart
 class FloatDetector: Detector {
     override var state: State = FloatStart(this)
 
-
     override fun detect(input: String): Boolean{
         val characters = input
             .trim()

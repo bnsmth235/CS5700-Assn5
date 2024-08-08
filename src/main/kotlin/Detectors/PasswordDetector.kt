@@ -7,7 +7,6 @@ import org.example.States.Password.PasswordStart
 class PasswordDetector: Detector {
     override var state: State = PasswordStart(this)
 
-
     override fun detect(input: String): Boolean{
         val characters = input
             .trim()

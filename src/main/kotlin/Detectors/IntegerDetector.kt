@@ -6,8 +6,7 @@ import org.example.States.Integer.IntegerStart
 
 class IntegerDetector: Detector {
     override var state: State = IntegerStart(this)
-
-
+    
     override fun detect(input: String): Boolean{
         val characters = input
             .trim()

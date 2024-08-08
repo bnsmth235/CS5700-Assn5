@@ -6,7 +6,6 @@ import States.State
 class EmailDetector: Detector {
     override var state: State = EmailStart(this)
 
-
     override fun detect(input: String): Boolean{
         val characters = input
             .trim()

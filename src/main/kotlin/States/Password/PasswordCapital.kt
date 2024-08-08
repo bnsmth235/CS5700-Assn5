@@ -10,7 +10,5 @@ class PasswordCapital(detector: PasswordDetector) : PasswordState(detector) {
         if (string in "!@#\$%&*") {
             detector.state = PasswordInvalid(detector)
         }
-
-
     }
 }

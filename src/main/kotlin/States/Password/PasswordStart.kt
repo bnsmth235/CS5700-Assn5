@@ -12,7 +12,5 @@ class PasswordStart(detector: PasswordDetector) : PasswordState(detector) {
         } else if (string in "QWERTYUIOPLKJHGFDSAZXCVBNM") {
             detector.state = PasswordCapital(detector)
         }
-
-
     }
 }
