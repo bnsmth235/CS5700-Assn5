@@ -9,7 +9,7 @@ class EmailExtension(detector: EmailDetector) : EmailState(detector) {
         if (string in "@. "){
             detector.state = InvalidState(detector)
         } else {
-            detector.state = EmailValidState(detector)
+            detector.state = EmailValid(detector)
         }
     }
 }
